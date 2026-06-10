@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenShop - Əlaqə</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== BAŞLIQ ========== -->
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">🌿 GreenShop</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Ana səhifə</a></li>
+                <li><a href="shop.html">Mağaza</a></li>
+                <li><a href="care.html">Qulluq</a></li>
+                <li><a href="about.html">Haqqımızda</a></li>
+                <li><a href="contact.html" class="active">Əlaqə</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ========== SƏHİFƏ BAŞLIĞI ========== -->
+    <section class="page-header">
+        <h1>Bizimlə əlaqə</h1>
+        <p>Sualınız varsa, formanı doldurun və bizimlə əlaqə saxlayın</p>
+    </section>
+
+    <!-- ========== ƏSAS MƏZMUN ========== -->
+    <main class="main">
+
+        <section class="contact-section">
+
+            <!-- ========== ƏLAQƏ FORMASI ========== -->
+            <!-- Form tələbləri: placeholder, type, name, label, fieldset, legend -->
+            <form id="contactForm" class="form">
+
+                <!-- Birinci fieldset - şəxsi məlumat -->
+                <fieldset>
+                    <legend>Şəxsi məlumatlar</legend>
+
+                    <!-- label + input -->
+                    <div class="form-group">
+                        <label for="name">Ad və soyad:</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Ad və soyadınızı daxil edin" 
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-poçt ünvanı:</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="numune@mail.com" 
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefon nömrəsi:</label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            placeholder="+994 50 123 45 67">
+                    </div>
+                </fieldset>
+
+                <!-- İkinci fieldset - mesaj -->
+                <fieldset>
+                    <legend>Mesajınız</legend>
+
+                    <div class="form-group">
+                        <label for="subject">Mövzu:</label>
+                        <select id="subject" name="subject">
+                            <option value="question">Sual</option>
+                            <option value="order">Sifariş</option>
+                            <option value="complaint">Şikayət</option>
+                            <option value="other">Digər</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mesaj:</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            placeholder="Mesajınızı buraya yazın..." 
+                            rows="5" 
+                            required></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Göndər düyməsi -->
+                <button type="submit" class="btn">Göndər</button>
+            </form>
+
+            <!-- JavaScript-lə göstəriləcək uğur mesajı (əvvəlcə gizli) -->
+            <div id="successMessage" class="success-message">
+                ✅ Mesajınız uğurla göndərildi! Tezliklə sizinlə əlaqə saxlayacağıq.
+            </div>
+
+            <!-- Əlaqə məlumatları -->
+            <div class="contact-info">
+                <h2>Əlaqə məlumatları</h2>
+                <p>📍 Ünvan: Bakı şəhəri, Nəsimi rayonu</p>
+                <p>📞 Telefon: +994 12 345 67 89</p>
+                <p>✉️ E-poçt: info@greenshop.az</p>
+                <p>🕐 İş saatları: Hər gün 09:00 - 21:00</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <p>&copy; 2026 GreenShop. Bütün hüquqlar qorunur.</p>
+        <p>Bakı, Azərbaycan | info@greenshop.az</p>
+    </footer>
+
+    <!-- JavaScript faylına link (səhifənin sonunda) -->
+    <script src="script.js"></script>
+</body>
+</html>

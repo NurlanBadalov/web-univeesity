@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <!-- Sənədin metadata-sı -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenShop - Ana səhifə</title>
+    <!-- Ümumi CSS faylına link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== BAŞLIQ / NAVİQASİYA (semantik <header> teqi) ========== -->
+    <!-- position: fixed istifadə olunur (style.css-də) -->
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">🌿 GreenShop</a>
+            <!-- Naviqasiya menyusu - bütün 5 səhifəyə link -->
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Ana səhifə</a></li>
+                <li><a href="shop.html">Mağaza</a></li>
+                <li><a href="care.html">Qulluq</a></li>
+                <li><a href="about.html">Haqqımızda</a></li>
+                <li><a href="contact.html">Əlaqə</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ========== HERO BÖLMƏSİ (gradient fon + animasiya) ========== -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Evinizə təbiət gətirin</h1>
+            <p>Ən gözəl otaq bitkiləri burada sizi gözləyir</p>
+            <a href="shop.html" class="btn">Mağazaya keç</a>
+        </div>
+    </section>
+
+    <!-- ========== ƏSAS MƏZMUN (semantik <main> teqi) ========== -->
+    <main class="main">
+
+        <!-- Seçilmiş bitkilər bölməsi -->
+        <section class="featured">
+            <h2 class="section-title">Seçilmiş bitkilər</h2>
+            
+            <!-- Kartlar Grid strukturunda (style.css-də display: grid) -->
+            <div class="cards">
+
+                <!-- Kart 1 (semantik <article> teqi) -->
+                <article class="card">
+                    <div class="card-image">🌵</div>
+                    <h3>Kaktus</h3>
+                    <p>Qulluğu çox asan, az su istəyir</p>
+                    <span class="price">15 AZN</span>
+                </article>
+
+                <!-- Kart 2 -->
+                <article class="card">
+                    <div class="card-image">🪴</div>
+                    <h3>Monstera</h3>
+                    <p>İri yarpaqları ilə evi gözəlləşdirir</p>
+                    <span class="price">35 AZN</span>
+                </article>
+
+                <!-- Kart 3 -->
+                <article class="card">
+                    <div class="card-image">🌱</div>
+                    <h3>Sukulent</h3>
+                    <p>Kiçik, sevimli və qulluğu sadə</p>
+                    <span class="price">8 AZN</span>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Niyə bizi seçməli bölməsi -->
+        <section class="info">
+            <h2 class="section-title">Niyə bizi seçməlisiniz?</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-icon">🚚</div>
+                    <h3>Pulsuz çatdırılma</h3>
+                    <p>50 AZN-dən yuxarı sifarişlərə pulsuz çatdırılma</p>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">💚</div>
+                    <h3>Keyfiyyət zəmanəti</h3>
+                    <p>Bütün bitkilər sağlam və təzə vəziyyətdə</p>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <h3>24/7 dəstək</h3>
+                    <p>Sualınız varsa hər zaman bizimlə əlaqə saxlayın</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER (semantik <footer> teqi) ========== -->
+    <footer class="footer">
+        <p>&copy; 2026 GreenShop. Bütün hüquqlar qorunur.</p>
+        <p>Bakı, Azərbaycan | info@greenshop.az</p>
+    </footer>
+
+</body>
+</html>
